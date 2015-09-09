@@ -1,0 +1,15 @@
+create table roman.chanliang (
+chanliangID int unsigned not null auto_increment ,
+ygongID int unsigned not null ,
+gongxu varchar(7),
+riqi date,
+chanliang varchar(10),
+channengbt varchar(10),
+zuidibt varchar(10),
+zhuanghuo varchar(7),
+xiehuo varchar(7),
+zahuo varchar(7),
+yichang varchar(7),
+chanlianggongzi varchar(10),
+
+primary key(chanliangID));

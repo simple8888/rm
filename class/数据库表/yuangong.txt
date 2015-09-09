@@ -1,0 +1,26 @@
+create table roman.yuangong (
+yuangongID int unsigned not null auto_increment,
+number varchar(6) ,
+name varchar(16) ,
+sex varchar(6) ,
+birthday date,
+age float(7,2),
+idno varchar(18) ,
+cell varchar(11),
+tel varchar(25),
+email varchar(45),
+marriage varchar(10),
+hometown varchar(100),
+livesite varchar(100),
+zhiwu varchar(16),
+ruzhiriqi date ,
+hetongqixian varchar(6),
+gongzuodidian varchar(8),
+shifouzhuchang varchar(2),
+shifouzaizhi varchar(2),
+lizhiriqi date ,
+feature tinytext,
+memo tinytext,
+primary key(yuangongID));
+
+age float(7,2),总共7位，2位小数

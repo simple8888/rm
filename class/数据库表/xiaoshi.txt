@@ -1,0 +1,10 @@
+create table roman.xiaoshi (
+xiaoshiID int unsigned not null auto_increment,
+niandu varchar(4),
+gongchang varchar(8),
+xiaoshizd varchar(6),
+rizuidi varchar(8),
+yuezuidi varchar(8),
+beizhu varchar(40),
+
+primary key(xiaoshiID));

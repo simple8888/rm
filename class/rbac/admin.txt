@@ -1,0 +1,9 @@
+create table roman.admin (
+adminid int unsigned not null auto_increment,
+adminname varchar(10),
+password varchar(14),
+gongchang varchar(8),
+bumen varchar(16),
+name varchar(30),
+beizhu varchar(200),
+primary key(adminid));

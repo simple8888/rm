@@ -1,0 +1,9 @@
+create table roman.gongxu (
+gongxuID int unsigned not null auto_increment,
+gongchang varchar(20),
+chejian varchar(20),
+gongxu varchar(16),
+gongjia varchar(10),
+beizhu varchar(40),
+
+primary key(gongxuID));

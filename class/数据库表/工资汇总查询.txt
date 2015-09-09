@@ -1,0 +1,8 @@
+ select number,name,chanliang.ygongID,sum(zhilianggongzi),sum(chanlianggon
+gzi) from yuangong,chanliang,zhiliang  where yuangongID=chanliang.ygongID  and y
+uangongID=zhiliang.ygongID and shifouzaizhi='ÊÇ'and chanliang.riqi between '2015
+-7-9' and '2015-7-11'  group by chanliang.ygongID;
+
+
+
+mysql> select number,name,yuangongID,sum(chanlianggongzi),sum(zhilianggongzi) from yuangong,chanliang,zhiliang  where yuangongID=chanliang.ygongID and chanliang.ygongID=zhiliang.ygongID and shifouzaizhi='ÊÇ'and zhiliang.riqi between '2015-7-9' and '2015-7-11'  group by yuangongID;

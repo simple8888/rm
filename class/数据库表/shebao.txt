@@ -1,0 +1,10 @@
+create table roman.shebao (
+shebaoID int unsigned not null auto_increment ,
+ygongID int unsigned not null ,
+jishu varchar(12),
+bili varchar(7),
+xianzhong varchar(7),
+shebao varchar(14),
+beizhu varchar(40),
+
+primary key(shebaoID));

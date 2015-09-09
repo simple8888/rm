@@ -1,0 +1,27 @@
+
+CREATE VIEW kaoqin_view AS
+SELECT ygongID,sum(fadingcq) as fadingcq,sum(fadingjb) as fadingjb,sum(zhoumojb) as zhoumojb,sum(guodingdx) as guodingdx,sum(hunjia) as hunjia,sum(chanjia) as chanjia,sum(sangjia) as sangjia,sum(bingjia) as bingjia,sum(pingshiqj) as pingshiqj,sum(zhoumoqj) as zhoumoqj,sum(quanqin) as quanqin,sum(dizeng) as dizeng,sum(peixun) as peixun,sum(jintie) as jintie,sum(hongbao) as hongbao,sum(fazhan) as fazhan,sum(gaowen) as gaowen,sum(gongshang) as gongshang,sum(shuidian) as shuidian 
+FROM kaoqin 
+WHERE (1=1)
+group by ygongID
+order by ygongID DESC
+
+ALTER VIEW kaoqin_view AS
+SELECT ygongID,sum(fadingcq) as fadingcq,sum(fadingjb) as fadingjb,sum(zhoumojb) as zhoumojb,sum(guodingdx) as guodingdx,sum(hunjia) as hunjia,sum(chanjia) as chanjia,sum(sangjia) as sangjia,sum(bingjia) as bingjia,sum(pingshiqj) as pingshiqj,sum(zhoumoqj) as zhoumoqj,sum(quanqin) as quanqin,sum(dizeng) as dizeng,sum(peixun) as peixun,sum(jintie) as jintie,sum(hongbao) as hongbao,sum(fazhan) as fazhan,sum(gaowen) as gaowen,sum(gongshang) as gongshang,sum(shuidian) as shuidian 
+FROM kaoqin 
+WHERE riqi between '2015-7-8' and '2015-7-9'
+group by ygongID
+order by ygongID DESC
+
+查看视图:
+1,describe kaoqin_view;
+2,show create view kaoqin_view\G;
+3,SELECT * FROM INFORMATION_SCHEMA.views WHERE table_schema="roman"\G;
+
+修改视图:
+alter view kaoqin_view as
+select
+from 
+
+删除视图:
+drop view kaoqin_view;

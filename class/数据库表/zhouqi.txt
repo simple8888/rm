@@ -1,0 +1,9 @@
+create table roman.zhouqi (
+zhouqiID int unsigned not null auto_increment,
+gongchang varchar(8),
+pandianyuefen varchar(14),
+qishiriqi date,
+zhongzhiriqi date,
+beizhu varchar(40),
+
+primary key(zhouqiID));

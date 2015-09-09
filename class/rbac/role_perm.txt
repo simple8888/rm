@@ -1,0 +1,6 @@
+create table roman.role_perm (
+roleid int unsigned not null ,
+permissionid int unsigned not null ,
+
+foreign key(roleid) references role(roleid)
+foreign key(permissionid) references role(permissionid));

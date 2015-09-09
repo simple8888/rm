@@ -1,0 +1,7 @@
+{if 0<$smarty.capture.yn and $smarty.capture.yn<=1500} {$smarty.capture.yn*0.03} {elseif 1500<$smarty.capture.yn and $smarty.capture.yn<=4500} {$smarty.capture.yn*0.1-105} {elseif 4500<$smarty.capture.yn and $smarty.capture.yn<=9000} {$smarty.capture.yn*0.2-555} {elseif 9000<$smarty.capture.yn and $smarty.capture.yn<=35000} {$smarty.capture.yn*0.25-1005} {elseif 35000<$smarty.capture.yn and $smarty.capture.yn<=55000} {$smarty.capture.yn*0.3-2755} {elseif 55000<$smarty.capture.yn and $smarty.capture.yn<=80000} {$smarty.capture.yn*0.35-5505} {elseif $smarty.capture.yn>80000} {$smarty.capture.yn*0.45-13505} {/if}
+
+
+{if $smarty.capture.yn<=1500} {$smarty.capture.yn*0.03} {elseif $smarty.capture.yn<=4500} {$smarty.capture.yn*0.1-105} {elseif $smarty.capture.yn<=9000} {$smarty.capture.yn*0.2-555} {elseif $smarty.capture.yn<=35000} {$smarty.capture.yn*0.25-1005} {elseif $smarty.capture.yn<=55000} {$smarty.capture.yn*0.3-2755} {elseif $smarty.capture.yn<=80000} {$smarty.capture.yn*0.35-5505} {else} {$smarty.capture.yn*0.45-13505} {/if}
+
+下式可以显示公式的实际输出情况，用于调式程序
+{if ($smarty.capture.yn)<=1500} {($smarty.capture.yn)}*0.03 {elseif ($smarty.capture.yn)<=4500} {($smarty.capture.yn)}*0.1-105 {elseif ($smarty.capture.yn)<=9000} {($smarty.capture.yn)}*0.2-555 {elseif ($smarty.capture.yn)<=35000} {($smarty.capture.yn)}*0.25-1005 {elseif ($smarty.capture.yn)<=55000} {($smarty.capture.yn)}*0.3-2755 {elseif ($smarty.capture.yn)<=80000} {($smarty.capture.yn)}*0.35-5505 {else} {($smarty.capture.yn)}*0.45-13505 {/if}

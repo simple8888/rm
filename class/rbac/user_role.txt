@@ -1,0 +1,6 @@
+create table roman.user_role (
+userid int unsigned not null ,
+roleid int unsigned not null ,
+
+foreign key(userid) references role(userid)
+foreign key(roleid) references role(roleid));

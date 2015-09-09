@@ -1,0 +1,38 @@
+auto=1立即PRINT，否则timeOut毫秒后PRINT，如printPage(0,5000)； 
+
+
+function printPage($auto=1,$timeOut=10000) { 
+if ($auto == 1) { 
+echo " 
+< SCRIPT LANGUAGE="JavaScript" > 
+< !-- Begin 
+if (window.print) { 
+window.print(); 
+} 
+else { 
+alert('No printer driver in your PC'); 
+} 
+// End -- > 
+< /script > 
+n"; 
+} 
+else { 
+echo " 
+< SCRIPT LANGUAGE="JavaScript" > 
+
+< !-- Begin 
+if (window.print) { 
+setTimeout('printCheck()','$timeOut'); 
+} 
+else { 
+alert('No printer driver in your PC'); 
+} 
+function printCheck() { 
+agree = confirm('OK to print now?'); 
+if (agree) window.print(); 
+} 
+// End -- > 
+< /script > 
+n"; 
+} 
+} 

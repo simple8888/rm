@@ -1,0 +1,9 @@
+create table roman.zhiliang (
+zhiliangID int unsigned not null auto_increment ,
+ygongID int unsigned not null ,
+riqi date,
+zhiliangjl varchar(7),
+zhiliangkk varchar(7),
+zhilianggongzi varchar(7),
+
+primary key(zhiliangID));

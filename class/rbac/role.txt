@@ -1,0 +1,6 @@
+create table roman.role (
+roleid int unsigned not null auto_increment,
+rolename varchar(10),
+rolecode int unsigned,
+permissioncode varchar(1200),
+primary key(roleid));

@@ -1,0 +1,7 @@
+1,显示数据库  mysql> SHOW DATABASES;
+2,切换或使用数据库 USE databasename;
+3,创建数据库 DREATE DATABASE databasename;
+4,删除数据库 DROP DATABASE databasename; 
+
+
+

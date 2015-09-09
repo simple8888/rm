@@ -1,0 +1,6 @@
+create table roman.permission (
+permissionid int unsigned not null auto_increment,
+permissionname varchar(10),
+permissioncode int unsigned,
+permission varchar(60),
+primary key(permissionid));
